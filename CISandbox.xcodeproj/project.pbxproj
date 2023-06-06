@@ -14,6 +14,7 @@
 		E5AE4DCB2A2955DA0024CBB9 /* CISandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DCA2A2955DA0024CBB9 /* CISandboxTests.swift */; };
 		E5AE4DD52A2955DA0024CBB9 /* CISandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DD42A2955DA0024CBB9 /* CISandboxUITests.swift */; };
 		E5AE4DD72A2955DA0024CBB9 /* CISandboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DD62A2955DA0024CBB9 /* CISandboxUITestsLaunchTests.swift */; };
+		E5AE4DEB2A2E032E0024CBB9 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AE4DEB2A2E032E0024CBB9 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CISandbox;
+			packageProductDependencies = (
+				E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */,
+			);
 			productName = CISandbox;
 			productReference = E5AE4DB62A2955D70024CBB9 /* CISandbox.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E5AE4DAD2A2955D70024CBB9;
+			packageReferences = (
+				E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */,
+			);
 			productRefGroup = E5AE4DB72A2955D70024CBB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CISandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RK6M7TB7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CISandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RK6M7TB7A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rajwe/MyLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5AE4DAE2A2955D70024CBB9 /* Project object */;
 }
