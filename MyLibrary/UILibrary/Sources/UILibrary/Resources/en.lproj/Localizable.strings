@@ -1,0 +1,4 @@
+/* The text indicates the current page number and the total number of available pages. This may read to the user by VoiceOver */
+"generic.page-number" = "Page [CURRENT] of [TOTAL]";
+
+"welcome.view.title" = "This is a localized string from MyLibrary/UILibrary";

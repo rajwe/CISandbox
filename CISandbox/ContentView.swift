@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import MyLibrary
+import UILibrary
 
 struct ContentView: View {
     var body: some View {

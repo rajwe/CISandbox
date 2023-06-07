@@ -14,7 +14,7 @@
 		E5AE4DCB2A2955DA0024CBB9 /* CISandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DCA2A2955DA0024CBB9 /* CISandboxTests.swift */; };
 		E5AE4DD52A2955DA0024CBB9 /* CISandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DD42A2955DA0024CBB9 /* CISandboxUITests.swift */; };
 		E5AE4DD72A2955DA0024CBB9 /* CISandboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE4DD62A2955DA0024CBB9 /* CISandboxUITestsLaunchTests.swift */; };
-		E5AE4DEB2A2E032E0024CBB9 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */; };
+		EA0569172A3099E0007236A6 /* UILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EA0569162A3099E0007236A6 /* UILibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,7 @@
 		E5AE4DD02A2955DA0024CBB9 /* CISandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CISandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AE4DD42A2955DA0024CBB9 /* CISandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CISandboxUITests.swift; sourceTree = "<group>"; };
 		E5AE4DD62A2955DA0024CBB9 /* CISandboxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CISandboxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA0ABD742A30942900478AEE /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5AE4DEB2A2E032E0024CBB9 /* MyLibrary in Frameworks */,
+				EA0569172A3099E0007236A6 /* UILibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,10 +77,12 @@
 		E5AE4DAD2A2955D70024CBB9 = {
 			isa = PBXGroup;
 			children = (
+				EA0ABD742A30942900478AEE /* MyLibrary */,
 				E5AE4DB82A2955D70024CBB9 /* CISandbox */,
 				E5AE4DC92A2955DA0024CBB9 /* CISandboxTests */,
 				E5AE4DD32A2955DA0024CBB9 /* CISandboxUITests */,
 				E5AE4DB72A2955D70024CBB9 /* Products */,
+				EA0569152A3099E0007236A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +132,13 @@
 			path = CISandboxUITests;
 			sourceTree = "<group>";
 		};
+		EA0569152A3099E0007236A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,7 +156,7 @@
 			);
 			name = CISandbox;
 			packageProductDependencies = (
-				E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */,
+				EA0569162A3099E0007236A6 /* UILibrary */,
 			);
 			productName = CISandbox;
 			productReference = E5AE4DB62A2955D70024CBB9 /* CISandbox.app */;
@@ -221,7 +231,6 @@
 			);
 			mainGroup = E5AE4DAD2A2955D70024CBB9;
 			packageReferences = (
-				E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */,
 			);
 			productRefGroup = E5AE4DB72A2955D70024CBB9 /* Products */;
 			projectDirPath = "";
@@ -424,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CISandbox/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = QGW44NN585;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -453,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CISandbox/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = QGW44NN585;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -588,22 +597,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rajwe/MyLibrary.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		E5AE4DEA2A2E032E0024CBB9 /* MyLibrary */ = {
+		EA0569162A3099E0007236A6 /* UILibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E5AE4DE92A2E032E0024CBB9 /* XCRemoteSwiftPackageReference "MyLibrary" */;
-			productName = MyLibrary;
+			productName = UILibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
