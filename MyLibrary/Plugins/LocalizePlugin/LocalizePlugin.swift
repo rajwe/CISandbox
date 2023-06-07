@@ -12,7 +12,7 @@ struct LocalizePlugin: BuildToolPlugin {
 
         let executable = context.package.directory
             .removingLastComponent()
-            .appending(subpath: "scripts/Localizable")
+            .appending(subpath: "ci_scripts/ci_pre_xcodebuild.sh")
 
         return [
             .buildCommand(
